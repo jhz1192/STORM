@@ -30,22 +30,21 @@
             letter-spacing: 1px;
         }
 
-        /* PDF 容器样式 */
-        .pdf-container {
-            width: 80%; /* 控制 PDF 显示宽度 */
+        /* 图片容器样式 */
+        .image-container {
+            width: 80%; /* 控制图片显示宽度 */
             max-width: 800px; /* 最大宽度 */
-            height: 500px; /* 固定高度 */
             margin-bottom: 30px;
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             overflow: hidden; /* 隐藏超出部分 */
         }
 
-        /* PDF 内嵌样式 */
-        .pdf-container iframe {
+        /* 图片样式 */
+        .image-container img {
             width: 100%;
-            height: 100%;
-            border: none; /* 去除边框 */
+            height: auto;
+            display: block; /* 去除图片下方的空白 */
         }
 
         /* 按钮容器样式 */
@@ -84,9 +83,8 @@
                 font-size: 2em;
             }
 
-            .pdf-container {
-                width: 95%; /* 小屏幕下 PDF 宽度增加 */
-                height: 400px; /* 高度调整 */
+            .image-container {
+                width: 95%; /* 小屏幕下图片宽度增加 */
             }
 
             .button-container {
@@ -103,12 +101,12 @@
 </head>
 <body>
     <h1>STORM: Spatial-Temporal Iterative Optimization for Reliable Multicopter Trajectory Generation</h1>
-    <div class="pdf-container">
-        <iframe src="process.pdf" alt="STORM Process Diagram"></iframe>
+    <div class="image-container">
+        <img src="structure.png" alt="STORM Structure Diagram">
     </div>
     <div class="button-container">
-        <a href="link_to_your_code" class="button">Code</a>
-        <a href="link_to_your_video" class="button">Video</a>
+        <a href="https://github.com/username/repository-name" class="button">Code</a>
+        <a href="https://youtube.com/your-video-link" class="button">Video</a>
     </div>
 </body>
 </html>
