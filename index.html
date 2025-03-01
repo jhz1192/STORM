@@ -21,4 +21,78 @@
 
         /* 标题样式 */
         h1 {
-            font-size: 
+            font-size: 2.5em; /* 适当加大字体 */
+            color: #2c3e50; /* 深蓝色，更显专业 */
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 700; /* 加粗 */
+            line-height: 1.2; /* 更好的行高 */
+            letter-spacing: 1px; /* 适当的字母间距 */
+        }
+
+        /* 结构图样式 */
+        img {
+            max-width: 100%; /* 图片宽度适应容器 */
+            height: auto;
+            margin-bottom: 30px;
+            border-radius: 10px; /* 圆角 */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+        }
+
+        /* 按钮容器样式 */
+        .button-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap; /* 如果屏幕太小，按钮换行 */
+            justify-content: center;
+        }
+
+        /* 按钮样式 */
+        .button {
+            padding: 12px 24px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 8px; /* 更大的圆角 */
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease; /* 平滑过渡 */
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px); /* 悬停时轻微上移 */
+        }
+
+        .button:active {
+            transform: translateY(0); /* 点击时恢复 */
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em; /* 小屏幕下字体缩小 */
+            }
+
+            .button-container {
+                flex-direction: column; /* 小屏幕下按钮垂直排列 */
+                gap: 15px;
+            }
+
+            .button {
+                width: 100%; /* 按钮占满宽度 */
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>STORM: Spatial-Temporal Iterative Optimization for Reliable Multicopter Trajectory Generation</h1>
+    <img src="path_to_your_structure_image.png" alt="STORM Structure Diagram">
+    <div class="button-container">
+        <a href="link_to_your_code" class="button">Code</a>
+        <a href="link_to_your_video" class="button">Video</a>
+    </div>
+</body>
+</html>
